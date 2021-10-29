@@ -18,13 +18,13 @@ const duplicateEncode = (word) => {
 };
 
 // USING STRING METHODS
-const duplicateEncode = (word) => {
-  return word
-    .toLowerCase()
-    .replace(/./g, (char) =>
-      word.indexOf(char) === word.lastIndexOf(char) ? "(" : ")"
-    );
-};
+// const duplicateEncode = (word) => {
+//   return word
+//     .toLowerCase()
+//     .replace(/./g, (char) =>
+//       word.indexOf(char) === word.lastIndexOf(char) ? "(" : ")"
+//     );
+// };
 console.log(duplicateEncode("din")); // '((('
 console.log(duplicateEncode("recede")); // '()()()'
 console.log(duplicateEncode("Success")); // ")())())"

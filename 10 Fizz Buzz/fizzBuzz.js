@@ -4,6 +4,12 @@
 // print out “Buzz”; when it’s divisible by both 3 and 5,
 // print out “Fizz Buzz”.
 
+// const fizzBuzz = (n) => {
+//   for (let num = 1; num <= n; num++) {
+//     console.log((num % 3 ? "" : "fizz") + (num % 5 ? "" : "buzz") || num);
+//   }
+// };
+
 const fizzBuzz = (n) => {
   for (let num = 1; num <= n; num++) {
     if (num % 3 === 0 && num % 5 === 0) {
