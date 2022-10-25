@@ -1,6 +1,6 @@
 function repeats(arr) {
   return arr
-    .filter((v, i) => arr.indexOf(v) === arr.lastIndexOf(v))
+    .filter((v, i) => arr.indexOf(v) === arr.lastIndexOf(v)) // unique numbers remain
     .reduce((a, c) => a + c);
 }
 
