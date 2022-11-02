@@ -10,7 +10,7 @@ For example:
 "Example Input" ==> "iNPUT eXAMPLE"
 */
 
-function stringTransformer(str) {
+const stringTransformer = (str) => {
   return str
     .split("")
     .map((l) => (l === l.toUpperCase() ? l.toLowerCase() : l.toUpperCase()))
@@ -18,7 +18,7 @@ function stringTransformer(str) {
     .split(" ")
     .reverse()
     .join(" ");
-}
+};
 
 console.log(stringTransformer("EXample string")); // expected is 'STRING exAMPLE'
 console.log(stringTransformer("happY BIRthday TO You")); //expected is 'yOU to birTHDAY HAPPy'
