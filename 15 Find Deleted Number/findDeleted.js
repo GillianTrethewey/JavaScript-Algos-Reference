@@ -15,8 +15,8 @@ Note: N may be 1 or less (in the latter case, the first array will be []).
 
 findDeletedNumber = (arr, mixArr) => {
   if (arr.length === 0) return 0;
-  return arr.reduce((a, c) => a + c) + mixArr.reduce((a, c) => a - c, 0);
-}
+  return arr.reduce((a, c) => a + c) - mixArr.reduce((a, c) => a + c, 0);
+};
 
 console.log(findDeletedNumber([1, 2, 3, 4, 5], [3, 4, 1, 5])); // expected 2
 console.log(
@@ -27,6 +27,4 @@ console.log(
 ); // expected 0
 console.log(findDeletedNumber([], [])); // expect 0
 
-
 // const findDeletedNumber = (arr, mixArr) =>  arr.filter(el => !mixArr.includes(el))[0] || 0
-
