@@ -9,10 +9,9 @@
 
 // Make sure that you don't count duplicates;
 // for example solve([[1,2],[4,4],[5,6,6]]) = 4, since the extra outcomes are just duplicates.
-
-function solve(arr) {
-  return arr.map( (item) => new Set(item).size ).reduce( (a, c) => a * c, 1 );
-}
+const solve = (arr) => {
+  return arr.map((item) => new Set(item).size).reduce((a, c) => a * c, 1);
+};
 
 const solve = (arr) => arr.reduce((a, c) => a * new Set(c).size, 1);
 
